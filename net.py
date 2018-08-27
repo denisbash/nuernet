@@ -1,4 +1,8 @@
-
+""" This is a simple neural net. This module contains the definitions of two
+classes: NNET and LEARN. The second is derived from the first.
+The __init__ method of NNET takes a list of positive natural numbers as its argument and
+initializes a net with the number of nodes in layers corresponding to the list.
+The first layer is the input layer."""
 import numpy as np
 import math
 
@@ -61,7 +65,7 @@ class LEARN(NNET):
 	
 	def __init__(self, tmpl):
 		self.tmpl = tmpl
-		NNET().__init__(tmpl) 
+		super().__init__(tmpl) 
 		self.Target_Output = []
 		self.L = self.States
 		self.States_der = []
