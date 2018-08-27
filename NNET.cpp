@@ -287,20 +287,10 @@ int main(){
 	vector<double> V_I = {30, 10};
 	nn.compute(V_I);
 	
-	
-	
 	cout<<"check 2. must be 0"<<endl;
 	
 	vector<double> V_II = {-30, -10};
-	nn.compute(V_II);
-	
-  
-  
-  
-  
-  
-  
-  
+	nn.compute(V_II);  
   
  return 0; 
 }
